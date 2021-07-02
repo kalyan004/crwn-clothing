@@ -15,7 +15,7 @@ createSelector(
 
 export const selectCollectionsForPreview = createSelector(
     [selectCollections],
-    collections => Object.keys().map(
+    collections => Object.keys(collections).map(
         key => collections[key]
     )
 )
